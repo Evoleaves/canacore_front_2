@@ -9,7 +9,7 @@ function App() {
 
   const login = async () => {
     try {
-      const tokenRes = await fetch(backendURL + "/token", {
+      const tokenRes = await fetch(backendURL + "/login", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
